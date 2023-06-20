@@ -1,0 +1,356 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-20T18:38:18.717Z",
+    "end": "2023-06-20T18:39:42.270Z",
+    "duration": 83553,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "432f8128-81cd-4e4f-945d-0f927fa76375",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Projekt\\specgear.cy.js",
+      "file": "cypress\\e2e\\Projekt\\specgear.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2053d36e-ed47-4c78-8cfb-06ade6559e92",
+          "title": "Test check server response",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_1 Check status code 200",
+              "fullTitle": "Test check server response TC_1 Check status code 200",
+              "timedOut": null,
+              "duration": 6864,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"https://specgear.com.pl/\").its(\"status\").should(\"eq\", 200);",
+              "err": {},
+              "uuid": "b060a085-eb95-46f8-9ec6-e29ac3fdc349",
+              "parentUUID": "2053d36e-ed47-4c78-8cfb-06ade6559e92",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b060a085-eb95-46f8-9ec6-e29ac3fdc349"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6864,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2822807d-2088-42bc-b89b-3f2dc5c32b9f",
+          "title": "Test of Cookie pop-up specgear",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_2 Confirm pop-up",
+              "fullTitle": "Test of Cookie pop-up specgear TC_2 Confirm pop-up",
+              "timedOut": null,
+              "duration": 7176,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "specgear.getConfirmPopUp().should(\"be.visible\");\nspecgear.getConfirmPopUp().click();\nspecgear.getConfirmPopUp().should(\"not.be.visible\");",
+              "err": {},
+              "uuid": "c6f28106-ea2c-4c91-acc6-dad7f4533b23",
+              "parentUUID": "2822807d-2088-42bc-b89b-3f2dc5c32b9f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_3 Decline pop-up",
+              "fullTitle": "Test of Cookie pop-up specgear TC_3 Decline pop-up",
+              "timedOut": null,
+              "duration": 5579,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "specgear.getDeclinePopUp().should(\"be.visible\");\nspecgear.getDeclinePopUp().click();\nspecgear.getDeclinePopUp().should(\"not.exist\");",
+              "err": {},
+              "uuid": "ad0548e9-a7dd-4da7-bc7e-7777704a124e",
+              "parentUUID": "2822807d-2088-42bc-b89b-3f2dc5c32b9f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_4 View more information",
+              "fullTitle": "Test of Cookie pop-up specgear TC_4 View more information",
+              "timedOut": null,
+              "duration": 4845,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "specgear.getMoreInfo().should(\"be.visible\").click();\ncy.contains(\"Polityka prywatności\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "822e6d7b-ba07-4a48-8de9-68919e5e38a0",
+              "parentUUID": "2822807d-2088-42bc-b89b-3f2dc5c32b9f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6f28106-ea2c-4c91-acc6-dad7f4533b23",
+            "ad0548e9-a7dd-4da7-bc7e-7777704a124e",
+            "822e6d7b-ba07-4a48-8de9-68919e5e38a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f26380cd-0d11-4020-aaad-f213074f6d44",
+          "title": "Test links",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_5 Check facebook link",
+              "fullTitle": "Test links TC_5 Check facebook link",
+              "timedOut": null,
+              "duration": 7532,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.facebook > ._blank').invoke('attr', 'href').then(href => {\n  cy.visit(href);\n  cy.url().should('contain', 'facebook.com');\n});",
+              "err": {},
+              "uuid": "2ee0214b-bf42-429e-8303-6ec705276fa7",
+              "parentUUID": "f26380cd-0d11-4020-aaad-f213074f6d44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_6 Check instagram link",
+              "fullTitle": "Test links TC_6 Check instagram link",
+              "timedOut": null,
+              "duration": 5587,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.instagram > ._blank').invoke('attr', 'href').then(href => {\n  cy.visit(href);\n  cy.url().should('contain', 'instagram.com');\n});",
+              "err": {},
+              "uuid": "dcb26fb5-a9c0-49d6-8a1a-2d4083fe0dd5",
+              "parentUUID": "f26380cd-0d11-4020-aaad-f213074f6d44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ee0214b-bf42-429e-8303-6ec705276fa7",
+            "dcb26fb5-a9c0-49d6-8a1a-2d4083fe0dd5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13119,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3b8e2005-125a-4ac0-82b3-9118e0852602",
+          "title": "Search products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_7 Search in specgear with {enter} and sort items",
+              "fullTitle": "Search products TC_7 Search in specgear with {enter} and sort items",
+              "timedOut": null,
+              "duration": 9923,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').clear().type(this.text.search).type('{enter}');\ncy.url().should('contain', this.text.query);\ncy.get('.icon-th-list').click();\ncy.get('.icon-th-list').should('be.visible');",
+              "err": {},
+              "uuid": "fce0ae77-f8a3-4286-a15b-cf7d0c46267c",
+              "parentUUID": "3b8e2005-125a-4ac0-82b3-9118e0852602",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_8 Search in specgear with click and adding the product to the cart",
+              "fullTitle": "Search products TC_8 Search in specgear with click and adding the product to the cart",
+              "timedOut": null,
+              "duration": 10311,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').clear().type(this.text.search);\ncy.get('#searchbox > .btn').click();\ncy.url().should('contain', this.text.query);\ncy.get(':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span').should(\"be.visible\");\ncy.get(':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span').click();\ncy.get('.continue > span').should(\"be.visible\");\ncy.wait(1000);\ncy.get('.continue > span').click();",
+              "err": {},
+              "uuid": "6d6b3c2a-6906-4073-9006-ace8e9f6ec34",
+              "parentUUID": "3b8e2005-125a-4ac0-82b3-9118e0852602",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_9 Removing the product from the cart",
+              "fullTitle": "Search products TC_9 Removing the product from the cart",
+              "timedOut": null,
+              "duration": 15257,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').clear().type(this.text.search);\ncy.get('#searchbox > .btn').click();\ncy.url().should('contain', this.text.query);\ncy.get(':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span').should(\"be.visible\");\ncy.get(':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span').click();\ncy.get('.button-medium > span').click();\ncy.get('.icon-trash').click();\ncy.wait(1000);\ncy.get('.alert').should(\"be.visible\");",
+              "err": {},
+              "uuid": "faf9bdbd-0d4f-4ce4-9017-5e41a5028e17",
+              "parentUUID": "3b8e2005-125a-4ac0-82b3-9118e0852602",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fce0ae77-f8a3-4286-a15b-cf7d0c46267c",
+            "6d6b3c2a-6906-4073-9006-ace8e9f6ec34",
+            "faf9bdbd-0d4f-4ce4-9017-5e41a5028e17"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35491,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3db34fbf-9600-4872-9557-6ce56142c8eb",
+          "title": "Login to specgear",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_10 Login with wrong password",
+              "fullTitle": "Login to specgear TC_10 Login with wrong password",
+              "timedOut": null,
+              "duration": 9488,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"loginSpecgear.json\").then(login => {\n  cy.ConfirmPopUp();\n  cy.get('.account').click();\n  cy.get('#login_form').should(\"be.visible\");\n  cy.get(\"#email\").type(login.email);\n  cy.get(\"#passwd\").type(login.password);\n  cy.get('#SubmitLogin > span').click();\n  cy.get('.center_bg > :nth-child(2)').should(\"be.visible\");\n});",
+              "err": {},
+              "uuid": "08d46a1f-1648-45fe-aac2-63c9e8755046",
+              "parentUUID": "3db34fbf-9600-4872-9557-6ce56142c8eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "08d46a1f-1648-45fe-aac2-63c9e8755046"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9488,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "[name]report",
+        "overwrite": "[Function TransformStreamDefaultController]",
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
